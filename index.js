@@ -15,7 +15,7 @@ const userInfoContainer = document.querySelector(".user-info-container")
 
 
 let oldTab = userTab;
-const API_KEY = "d1845658f92b31c64bd94f06f7188c9c";
+const API_KEY = "f927e23f38f9e7d29314c435ef3961d6";
 oldTab.classList.add("current-tab");
 
 
@@ -183,6 +183,7 @@ searchTab.addEventListener("click",()=>{
 
 async function fetchUserWeatherInfo(coordinates){
     const{lat,lon} = coordinates;
+    
     //make grant container invisible
     grantAccessContainer.classList.remove("active");
     //make loader visible
