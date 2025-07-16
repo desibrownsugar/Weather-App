@@ -209,11 +209,12 @@ margin-bottom:10px;
 }
 @media (max-width: 400px) {
   .parameter-container {
-    flex-direction: column;
-    gap: 15px 0;
+    flex-wrap: wrap; /* allow wrapping */
+    justify-content: space-around;
   }
   .parameter {
-    width: 100%;
+    width: 45%; /* two boxes per row */
     max-width: none;
+    margin-bottom: 1rem;
   }
 }
