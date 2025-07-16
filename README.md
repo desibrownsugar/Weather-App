@@ -2,6 +2,9 @@
 
 WeatherApp is a simple and lightweight web application that displays real-time weather data for any city using the OpenWeatherMap API. Built using vanilla HTML, CSS, and JavaScript, it's a straightforward project focusing on clean design and core functionality.
 
+
+![Weather App Demo](Assets/Animation.gif)
+
 ---
 
 # Features
