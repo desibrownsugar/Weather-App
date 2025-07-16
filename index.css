@@ -135,39 +135,44 @@ margin-bottom:10px;
     font-weight:700;
 }
 .parameter-container{
-    width:90%;
     display: flex;
-    gap: 10px 20px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  gap: 1rem; /* space between items */
+  justify-content: center;
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .parameter{
-    width:30%;
-    max-width:200px;
-    background-color: rgba(219, 226, 239, 0.5);;
-    border-radius: 5px;
-    padding:1rem;
-    display: flex;
-    flex-direction: column;
-    gap:5px 0;
-    /* justify-content: space-between; */
-    align-items: center; 
+  flex: 1 1 150px; /* flexible but with a minimum width */
+  max-width: 200px;
+  background-color: rgba(219, 226, 239, 0.8); /* light blue background */
+  color: #112D4E; /* dark text for readability */
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }   
 .parameter img{
-    width:50px;
-    height:50px;
-      object-fit: contain;
-  margin-bottom: 8px; /* add spacing below icon */
+    width: 50px;
+  height: 50px;
+  filter: none; /* make sure icon is fully visible */
 }
 .parameter p:first-of-type{
-    font-size: 1.15rem;
-    font-weight:600;
-    text-transform: uppercase;
+      font-size: 1.15rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #112D4E; /* ensure header text is dark */
 }
 .parameter p:last-of-type{
-    font-size: 1rem;
-    font-weight: 200;
+   font-size: 1rem;
+  font-weight: 200;
+  color: #112D4E; /* ensure value text is dark */
 }
 .form-container{
     display: none;
